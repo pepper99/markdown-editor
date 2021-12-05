@@ -5,7 +5,7 @@ import MarkdownEditor from './components/MarkdownEditor';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App vh-100">
       <MarkdownEditor/>
     </div>
   );

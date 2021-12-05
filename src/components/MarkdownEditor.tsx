@@ -9,8 +9,8 @@ export default function MarkdownEditor() {
   useDebounce(() => console.log(form), [form], 200);
 
   return (
-    <Container fluid="lg" className="text-primary mt-3">
-      <Row className="g-3">
+    <Container fluid="lg" className="text-primary p-3 h-100">
+      <Row className="g-3 h-100 align-items-center">
         <Col md={6} xs={12}>
           <EditorForm value={form} onChange={setForm}/>
         </Col>

@@ -25,9 +25,9 @@ function MarkdownParser(props: { parsingvalue: string }) {
     )
 
   return (
-    <Card className="p-3">
+    <Card className="p-3" style={{height: '600px'}}>
       <Card.Title>Markdown</Card.Title>
-      <Card.Body>
+      <Card.Body style={{overflowY: 'scroll'}}>
         {parse(parsed)}
       </Card.Body>
     </Card>

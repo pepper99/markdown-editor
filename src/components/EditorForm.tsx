@@ -4,7 +4,7 @@ import useDebounce from "../hooks/useDebounce";
 
 function EditorForm(props: { value: string; onChange: Function }) {
   return (
-    <Card className="p-3">
+    <Card className="p-3" style={{height: '600px'}}>
       <Card.Title>Editor</Card.Title>
       <Card.Body>
         <Form.Control
@@ -12,6 +12,7 @@ function EditorForm(props: { value: string; onChange: Function }) {
           placeholder="## Title"
           value={props.value}
           onChange={(event) => props.onChange(event.target.value)}
+          className="h-100"
         />
       </Card.Body>
     </Card>
